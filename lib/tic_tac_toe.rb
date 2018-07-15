@@ -58,6 +58,7 @@ class TicTacToe
     else
       puts "Please enter 1-9:"
       input = gets.strip 
+    end 
   end
 
   def turn_count
