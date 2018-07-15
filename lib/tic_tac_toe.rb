@@ -66,6 +66,8 @@ class TicTacToe
   end
 
   def won?
+    WIN_COMBINATIONS.each_with_index do |element, index|
+      if position_taken?(element[0]) == true 
   end 
 
   def current_player
