@@ -31,8 +31,8 @@ class TicTacToe
     @board[index] = token
   end
 
-  def position_taken?
-  end 
+  def position_taken?(index)
+  end
 
   def current_player
     turn_count % 2 == 0 ? "X" : "O"
