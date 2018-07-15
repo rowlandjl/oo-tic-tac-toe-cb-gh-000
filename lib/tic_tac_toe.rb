@@ -36,11 +36,11 @@ class TicTacToe
       false
     else
       true
-    end 
+    end
   end
 
-  def valid_move
-  end 
+  def valid_move(index)
+  end
 
   def current_player
     turn_count % 2 == 0 ? "X" : "O"
