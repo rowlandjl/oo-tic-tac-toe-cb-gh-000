@@ -96,7 +96,12 @@ end
 
 def winner
   winning_combo = won?
-  @board[winning_combo.first]
+
+  if winning_combo
+    @board[winning_combo.first]
+  else
+    nil
+  end 
 end
 
 def play
