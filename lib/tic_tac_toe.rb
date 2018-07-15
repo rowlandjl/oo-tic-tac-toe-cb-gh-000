@@ -95,7 +95,7 @@ def over?
 end
 
 def winner
-  winning_combo = won? 
+  winning_combo = won?
   @board[winning_combo.first]
 end
 
