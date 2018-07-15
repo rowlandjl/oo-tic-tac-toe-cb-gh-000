@@ -101,10 +101,13 @@ def winner
     @board[winning_combo.first]
   else
     nil
-  end 
+  end
 end
 
 def play
+  until over? do
+    turn
+  end 
 end
 
 end
