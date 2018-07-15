@@ -65,6 +65,10 @@ class TicTacToe
     @board.count{|token| token == "X" || token == "O"}
   end
 
+  def current_player
+    turn_count % 2 == 0 ? "X" : "O"
+  end
+
   def won?
     WIN_COMBINATIONS.each_with_index do |element, index|
       if position_taken?(element[0]) == true
@@ -73,11 +77,10 @@ class TicTacToe
         end
       end
     end
-    return false 
+    return false
   end
 
-  def current_player
-    turn_count % 2 == 0 ? "X" : "O"
-  end
+def full?
+end 
 
 end
