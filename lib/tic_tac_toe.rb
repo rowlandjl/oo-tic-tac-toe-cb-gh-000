@@ -69,9 +69,7 @@ class TicTacToe
     WIN_COMBINATIONS.each_with_index do |element, index|
       if position_taken?(element[0]) == true
         if @board[element[0]] == @board[element[1]] && @board[element[1]] == @board[element[2]]
-          true
-        else
-          false 
+          return WIN_COMBINATIONS[index.to_i]
         end
       end
     end
