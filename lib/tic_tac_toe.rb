@@ -40,7 +40,11 @@ class TicTacToe
   end
 
   def valid_move(index)
-    !position_taken?(index)
+    if position_taken?(index)
+      false 
+    else 
+      true 
+    end 
   end
 
   def current_player
