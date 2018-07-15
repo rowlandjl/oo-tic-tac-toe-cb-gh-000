@@ -81,6 +81,9 @@ class TicTacToe
   end
 
 def full?
+  @board.all? do |element|
+    element == "X" || element == "O"
+  end 
 end
 
 def draw?
